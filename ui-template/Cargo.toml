@@ -1,0 +1,17 @@
+# ABOUTME: Cargo manifest for UI template sandbox
+# ABOUTME: Standalone TUI for experimenting with recall's UI patterns
+
+[package]
+name = "ui-template"
+version = "0.1.0"
+edition = "2021"
+description = "Interactive UI sandbox for recall TUI experiments"
+
+[dependencies]
+# TUI
+ratatui = "0.29"
+crossterm = { git = "https://github.com/nornagon/crossterm", branch = "nornagon/color-query", features = ["event-stream"] }
+
+# Utilities
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1"
